@@ -8,13 +8,13 @@
 
 require("vendor/autoload.php");
 
-use Money\Calculator\Amount;
+use Money\Calculator\Calculator;
 
 use Money\Currency;
 use Money\Money;
 
-$sum = new Amount();
-var_dump($sum->getValue());
 
+$sum = new Calculator(Money::PLN(50),Money::PLN(50));
+var_dump($sum->getValue());
 
 

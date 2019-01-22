@@ -11,20 +11,20 @@ namespace Money\Calculator;
 use Money\Currency;
 use Money\Money;
 
-class Amount
+class Calculator
 {
 private $value1;
 private $value2;
-    /**
-     * @return Money
-     */
+
+    function __construct($value1,$value2)
+    {
+        $this->value1 = $value1;
+        $this->value2 = $value2;
+    }
+
     public function getValue()
     {
-
-        $this->value1=Money::PLN(800);
-        $this->value2=Money::PLN(800);
-
         return ($this->value1)->add($this->value2);
-
     }
+
 }
