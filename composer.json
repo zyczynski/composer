@@ -1,8 +1,11 @@
 {
   "autoload" : {
     "psr-4" :{
-      "Admins\\" : "app/Admins"
+      "Money\\" : "app/Money"
     }
-  }
 
+  },
+  "require": {
+    "moneyphp/money": "^3.2"
+  }
 }

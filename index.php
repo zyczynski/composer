@@ -8,10 +8,13 @@
 
 require("vendor/autoload.php");
 
-use Admins\Mod\Mod;
+use Money\Calculator\Amount;
 
-$moderator = new Mod();
+use Money\Currency;
+use Money\Money;
 
-echo "<br>";
+$sum = new Amount();
+var_dump($sum->getValue());
 
-$test = new \Admins\Mod\test();
+
+
