@@ -14,7 +14,7 @@ use Money\Currency;
 use Money\Money;
 
 
-$sum = new Calculator(Money::PLN(50),Money::PLN(50));
-var_dump($sum->getValue());
+$sum = new Calculator();
+var_dump($sum->getValue(Money::PLN(50),Money::PLN(50)));
 
 
