@@ -18,7 +18,12 @@ private $value2;
 
 
 
-    public function getValue($value1, $value2)
+    function __construct($value1, $value2)
+    {
+        $this->value1 = $value1;
+        $this->value2 = $value2;
+    }
+    public function getValue()
     {
         return ($this->value1)->add($this->value2);
     }
