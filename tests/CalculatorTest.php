@@ -17,7 +17,7 @@ class CalculatorTest extends TestCase
         $calculator = new \Money\Calculator\Calculator();
 
         $first = Money::PLN(6);
-        $second = Money::EUR(7);
+        $second = Money::PLN(7);
         $result = Money::PLN(13);
 
         $this->assertEquals(
