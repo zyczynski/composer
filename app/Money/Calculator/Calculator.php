@@ -13,7 +13,7 @@ use Money\Money;
 
 class Calculator
 {
-    public function getValue($value1, $value2)
+    public function getValue(Money $value1, Money $value2)
 
     {
         return $value1->add($value2);
