@@ -35,7 +35,7 @@ class CalculatorTest extends TestCase
         $result = Money::PLN(15);
 
         $this->assertEquals(
-            $calculator->getSubtract($first, $second),
+            $calculator->Subtract($first, $second),
             $result
         );
     }

@@ -15,6 +15,6 @@ use Money\Money;
 
 
 $sum = new \Money\Calculator\Calculator();
-var_dump($sum->getSubtract(Money::PLN(10), Money::PLN(20)));
+var_dump($sum->Subtract(Money::PLN(10), Money::PLN(20)));
 
 

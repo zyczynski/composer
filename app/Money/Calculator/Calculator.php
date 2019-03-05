@@ -19,7 +19,7 @@ class Calculator
         return $value1->add($value2);
     }
 
-    public function getSubtract(Money $value1, Money $value2)
+    public function Subtract(Money $value1, Money $value2)
 
     {
         return $value1->subtract($value2);
