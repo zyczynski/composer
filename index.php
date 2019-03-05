@@ -14,7 +14,7 @@ use Money\Currency;
 use Money\Money;
 
 
-$sum = new \Money\Calculator\SubtractCalculator();
+$sum = new \Money\Calculator\Calculator();
 var_dump($sum->getSubtract(Money::PLN(10), Money::PLN(20)));
 
 
