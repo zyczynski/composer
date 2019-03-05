@@ -25,4 +25,18 @@ class CalculatorTest extends TestCase
             $result
         );
     }
+
+    public function testSubtract()
+    {
+        $calculator = new \Money\Calculator\Calculator();
+
+        $first = Money::PLN(20);
+        $second = Money::PLN(5);
+        $result = Money::PLN(15);
+
+        $this->assertEquals(
+            $calculator->Subtract($first, $second),
+            $result
+        );
+    }
 }
